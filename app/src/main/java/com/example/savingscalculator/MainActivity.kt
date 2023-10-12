@@ -25,9 +25,10 @@ class MainActivity : AppCompatActivity() {
                 if (target < save) {
                     Toast.makeText(
                         this,
-                        "Target savings can't br lesser than amount save yearly",
+                        "Target savings can't be lesser than amount save yearly",
                         Toast.LENGTH_LONG
                     ).show()
+                    return@setOnClickListener
                 }
                 val dec = DecimalFormat("#,###.00")
 
