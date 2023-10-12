@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
+import android.widget.Toast
 import com.example.savingscalculator.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +14,15 @@ class MainActivity : AppCompatActivity() {
 
         mainView = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainView.root)
+
+        try {
+            mainView.compute.setOnClickListener {
+
+                closeKeyBoard()
+            }
+        }catch (e : Exception){
+            Toast.makeText(this, "Invalid action", Toast.LENGTH_LONG).show()
+        }
     }
 
     private fun closeKeyBoard() {
