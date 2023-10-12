@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.savingscalculator"
-    compileSdk = 33
+    compileSdk = 34
 
     buildFeatures {
         viewBinding = true
@@ -14,7 +14,6 @@ android {
     defaultConfig {
         applicationId = "com.example.savingscalculator"
         minSdk = 21
-        //noinspection OldTargetApi
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"

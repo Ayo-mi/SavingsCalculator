@@ -8,100 +8,109 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="394dp"
-        android:layout_height="53dp"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="Savings Calculator"
         android:textAlignment="center"
         android:textColor="#137717"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.19"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="176dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="235dp"
-        android:layout_marginBottom="572dp"
+        android:layout_width="161dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
         android:text="Target:"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="HardcodedText,TextSizeCheck" />
 
     <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="223dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="564dp"
+        android:id="@+id/target"
+        android:layout_width="172dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
-        android:hint="Enter Amount"
+        android:hint="Target"
         android:inputType="numberDecimal"
         android:textAlignment="center"
+        android:textColorHint="#A1887F"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:importantForAutofill="no"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/save"
-        android:layout_width="219dp"
-        android:layout_height="61dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="480dp"
+        android:layout_width="164dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="9dp"
         android:ems="10"
-        android:hint="Enter Amount"
+        android:hint="Saving"
         android:inputType="numberDecimal"
         android:textAlignment="center"
+        android:textColorHint="#A1887F"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/target"
+        tools:ignore="HardcodedText,TextContrastCheck"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="175dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="236dp"
-        android:layout_marginBottom="492dp"
+        android:layout_width="162dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
         android:text="Yearly Savings:"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="HardcodedText,TextSizeCheck" />
 
     <Button
         android:id="@+id/compute"
-        android:layout_width="106dp"
-        android:layout_height="55dp"
-        android:layout_marginEnd="153dp"
-        android:layout_marginBottom="112dp"
+        android:layout_width="148dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="88dp"
         android:backgroundTint="#009688"
         android:text="Compute"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="394dp"
-        android:layout_height="148dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginBottom="207dp"
+        android:layout_width="346dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="192dp"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
