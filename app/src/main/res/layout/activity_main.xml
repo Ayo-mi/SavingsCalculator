@@ -101,7 +101,7 @@
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/result"
         android:layout_width="346dp"
         android:layout_height="142dp"
         android:layout_marginStart="7dp"
