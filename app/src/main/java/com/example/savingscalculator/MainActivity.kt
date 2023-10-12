@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 val dec = DecimalFormat("#,###.00")
 
-                var years = (target / save).toInt()
+                val years = (target / save).toInt()
                 mainView.result.text =
                     "It will take approx. $years years to save " +
                             "$${dec.format(target)}\nwith a yearly savings of $${dec.format(save)}"
